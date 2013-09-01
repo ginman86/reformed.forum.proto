@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<programs xmlns:rf="http://api.reformedforum.org">
+    <program
+        text="All Programs"
+        title="All Programs"
+        type="rss"
+        xmlUrl="http://reformedforum.org/podcasts/feed?method=app" 
+	searchUrl="http://reformedforum.org/podcasts/feed"
+        htmlUrl="http://reformedforum.org/">
+        <rf:image>
+            <small url="http://reformedforum.org/files/images/thumbs/rf.jpg"/>
+            <medium url="http://reformedforum.org/files/images/albums/rf-album128.jpg"/>
+            <large url="http://reformedforum.org/files/images/albums/rf-album600.jpg"/>
+        </rf:image>
+    </program> 
+    <program
+        text="Christ the Center"
+        title="Christ the Center"
+        type="rss"
+        xmlUrl="http://reformedforum.org/programs/ctc/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/ctc/feed"
+        htmlUrl="http://reformedforum.org/ctc">
+        <rf:image>
+            <small url="http://reformedforum.org/files/images/thumbs/ctc.jpg"/>
+            <medium url="http://reformedforum.org/files/images/albums/ctc-album128.jpg"/>
+            <large url="http://reformedforum.org/files/images/albums/ctc-album600.jpg"/>
+        </rf:image>
+    </program> 	
+    <program
+        text="Reformed Media Review"
+        title="Reformed Media Review"
+        type="rss"
+        xmlUrl="http://reformedforum.org/programs/rmr/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/rmr/feed"
+        htmlUrl="http://reformedforum.org/rmr">
+        <rf:image>
+            <small url="http://reformedforum.org/files/images/thumbs/rmr.jpg"/>
+            <medium url="http://reformedforum.org/files/images/albums/rmr-album128.jpg"/>
+            <large url="http://reformedforum.org/files/images/albums/rmr-album600.jpg"/>
+        </rf:image>
+    </program>
+	<program
+	    text="Philosophy for Theologians"
+	    title="Philosophy for Theologians"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/pft/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/pft/feed"
+	    htmlUrl="http://reformedforum.org/pft">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/pft.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/pft-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/pft-album600.jpg"/>
+	    </rf:image>
+	</program> 	
+	<program
+	    text="East of Eden"
+	    title="East of Eden"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/eastofeden/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/eastofeden/feed"
+	    htmlUrl="http://reformedforum.org/pft">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/eastofeden.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/eastofeden-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/eastofeden-album600.jpg"/>
+	    </rf:image>
+	</program> 
+	<program
+	    text="Proclaiming Christ"
+	    title="Proclaiming Christ"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/proclaimingchrist/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/proclaimingchrist/feed"
+	    htmlUrl="http://reformedforum.org/programs/proclaimingchrist">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/proclaimingchrist.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/proclaimingchrist-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/proclaimingchrist-album600.jpg"/>
+	    </rf:image>
+	</program>	
+	<program
+	    text="Faith of Our Fathers"
+	    title="Faith of Our Fathers"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/faithofourfathers/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/faithofourfathers/feed"
+	    htmlUrl="http://reformedforum.org/programs/faithofourfathers">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/faithofourfathers.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/faithofourfathers-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/faithofourfathers-album600.jpg"/>
+	    </rf:image>
+	</program>	
+	<program
+	    text="Reformed Forum Express"
+	    title="Reformed Forum Express"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/express/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/express/feed"
+	    htmlUrl="http://reformedforum.org/express">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/express.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/express-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/express-album600.jpg"/>
+	    </rf:image>
+	</program>	
+    <program
+        text="Historia Ecclesia"
+        title="Historia Ecclesia"
+        type="rss"
+        xmlUrl="http://reformedforum.org/programs/historiaecclesia/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/historiaecclesia/feed"
+        htmlUrl="http://reformedforum.org/historiaecclesia">
+        <rf:image>
+            <small url="http://reformedforum.org/files/images/thumbs/historiaecclesia.jpg"/>
+            <medium url="http://reformedforum.org/files/images/albums/historiaecclesia.jpg-album128.jpg"/>
+            <large url="http://reformedforum.org/files/images/albums/historiaecclesia.jpg-album600.jpg"/>
+        </rf:image>
+    </program> 
+	<program
+	    text="Reformed Classics"
+	    title="Reformed Classics"
+	    type="rss"
+	    xmlUrl="http://reformedforum.org/programs/reformedclassics/feed?method=app" 
+	searchUrl="http://reformedforum.org/programs/reformedclassics/feed"
+	    htmlUrl="http://reformedforum.org/reformedclassics">
+	    <rf:image>
+	        <small url="http://reformedforum.org/files/images/thumbs/reformedclassics.jpg"/>
+	        <medium url="http://reformedforum.org/files/images/albums/reformedclassics-album128.jpg"/>
+	        <large url="http://reformedforum.org/files/images/albums/reformedclassics-album600.jpg"/>
+	    </rf:image>
+	</program> 		
+</programs>

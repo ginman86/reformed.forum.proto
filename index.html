@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<!--
+	reformed forum
+	@ginman86 3/17/2013
+-->
+<html>
+<head>
+    <title>Reformed Forum</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+
+    <!-- scripts -->
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+
+    <script type="text/javascript" src="js/knockout.mapping-latest.js"></script>
+    <script type="text/javascript" src="js/xml2json.js"></script>
+    <script type="text/javascript" src="js/json2xml.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<!--***********************
+
+	main page
+	@ginman86 3/24/2013
+	
+***********************-->
+
+<div data-role="page" id="programs">
+	<div id="header-programs">
+		<!--header-->
+	</div>	
+
+	<div id="content-programs" data-role="content">
+		<!-- content -->		
+		<input type="search" name="search-mini" class="search-mini" value="" data-mini="true" />
+		
+		<div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false" data-bind="foreach: $data ">
+			<div class="entry" data-role="collapsible" data-collapsed="false">
+				<h3 data-bind="text: title"></h3>					
+				
+				<b>Author:</b> <span data-bind="text: author"></span><p>
+				<b>Published:</b> <span data-bind="text: publishedDate"></span><p>
+				<p>
+					<span data-bind="html: content"></span>
+					<a data-bind="attr: {href: link}" >Full Story</a>
+					<div data-bind="foreach: mediaGroups">
+						<div data-bind="foreach: contents">							
+							<a data-bind="attr: {href: url}"><img src="http://reformedforum.org/wp-content/themes/rf5/images/icons/audio.gif" />Listen</a>
+						</div>
+					</div>				
+				</p>
+
+				<span><b>Categories:</b></span>
+				<div data-bind="text: categories().join(', ')"></div>							
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-programs">
+		<!-- footer -->	
+	</div>
+</div>
+
+<!--***********************
+
+	essays page
+	@ginman86 3/24/2013
+	
+***********************-->
+
+<div data-role="page" id="essays">
+	<div id="header-essays">
+		<!--header-->
+	</div>
+
+	<div id="content-essays" data-role="content">
+		<!-- content -->
+		<input type="search" name="search-mini" class="search-mini" value="" data-mini="true" />
+
+		<div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false" data-bind="foreach: $data ">
+			<div class="entry" data-role="collapsible" data-collapsed="false">
+				<h3 data-bind="text: title"></h3>					
+				
+				<b>Author:</b> <span data-bind="text: author"></span><p>
+				<b>Published:</b> <span data-bind="text: publishedDate"></span><p>
+				<p>
+					<span data-bind="html: content"></span>
+					<a data-bind="attr: {href: link}" >Full Story</a>							
+				</p>
+
+				<span><b>Categories:</b></span>
+				<div data-bind="text: categories().join(', ')"></div>							
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-essays">
+		<!-- footer -->
+	</div>
+</div>
+
+<!--***********************
+
+	search page
+	@ginman86 3/24/2013
+	
+************************-->
+
+<div data-role="page" id="search">
+	<div id="header-search">
+		<!-- header -->
+	</div>
+
+	<div id="content-search" data-role="content">
+		<!-- content -->
+		<input type="search" name="search-mini" class="search-mini" value="" data-mini="true" />
+
+		<div data-role="collapsible-set" class="searchResults" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-inset="false" data-bind="foreach: $data ">
+			<div class="entry" data-role="collapsible" data-collapsed="false">
+				<h3 data-bind="text: title"></h3>					
+				
+				<b>Author:</b> <span data-bind="text: author"></span><p>
+				<b>Published:</b> <span data-bind="text: publishedDate"></span><p>
+				<p>
+					<span data-bind="html: content"></span>
+					<a data-bind="attr: {href: link}" >Full Story</a>							
+				</p>
+
+				<span><b>Categories:</b></span>
+				<div data-bind="text: categories().join(', ')"></div>							
+			</div>
+		</div>
+	</div>
+
+	<div id="footer-search">
+		<!-- footer -->
+	</div>
+</div>
+
+<!--***********************
+
+	archive page
+	@ginman86 3/24/2013
+	
+************************-->
+
+<div data-role="page" id="archive">
+	<div id="header-archive">
+		<!-- header -->
+	</div>
+
+	<div id="content-archive">
+		<!-- content -->
+	</div>
+
+	<div id="footer-archive">
+		<!-- footer -->
+	</div>
+</div>
+
+<!--***********************
+
+	summary page
+	@ginman86 4/14/2013
+	
+************************-->
+
+<div data-role="page" id="summary">
+	<div id="header-summary">
+		<!-- header -->
+	</div>
+
+	<div id="content-summary">
+		<!-- content -->
+	</div>
+
+	<div id="footer-summary">
+		<!-- footer -->
+	</div>
+</div>
+
+<!--***********************
+
+	template html
+	@ginman86 4/14/2013
+	
+************************-->
+
+<div data-role="page" id="extra">
+
+<div id="footer-main">
+		<div data-role="footer" data-id="foo1" data-position="fixed">
+			<div data-role="navbar">
+				<ul>            
+					<li><a class="programBtn" href="#programs">Podcasts</a></li>
+					<li><a class="essayBtn" href="#essays">Essays</a></li>
+					<li><a class="searchBtn" href="#search">Search</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div>
+	</div>
+	
+	<div id="header-main">
+		<div data-role="header">
+<!-- 			<a href='#' class='ui-btn-left' data-icon='arrow-l' onclick="history.back(); return false">Back</a> -->
+			<div class="logo">				
+				<img class="rfHeader" src="http://reformedforum.org/wp-content/themes/rf5/images/logo.png"/>
+			</div><!-- 
+			<a href="#programs" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a> -->
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
