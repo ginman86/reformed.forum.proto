@@ -80,6 +80,9 @@
 	<div id="header-essays">
 		<!--header-->
 	</div>
+	<div id="nav-essays">
+
+	</div>
 
 	<div id="content-essays" data-role="content">
 		<!-- content -->
@@ -147,48 +150,6 @@
 
 <!--***********************
 
-	archive page
-	@ginman86 3/24/2013
-	
-************************-->
-
-<div data-role="page" id="archive">
-	<div id="header-archive">
-		<!-- header -->
-	</div>
-
-	<div id="content-archive">
-		<!-- content -->
-	</div>
-
-	<div id="footer-archive">
-		<!-- footer -->
-	</div>
-</div>
-
-<!--***********************
-
-	summary page
-	@ginman86 4/14/2013
-	
-************************-->
-
-<div data-role="page" id="summary">
-	<div id="header-summary">
-		<!-- header -->
-	</div>
-
-	<div id="content-summary">
-		<!-- content -->
-	</div>
-
-	<div id="footer-summary">
-		<!-- footer -->
-	</div>
-</div>
-
-<!--***********************
-
 	template html
 	@ginman86 4/14/2013
 	
@@ -196,26 +157,30 @@
 
 <div data-role="page" id="extra">
 
-<div id="footer-main">
-		<div data-role="footer" data-id="foo1" data-position="fixed">
-			<div data-role="navbar">
-				<ul>            
-					<li><a class="programBtn" href="#programs">Podcasts</a></li>
-					<li><a class="essayBtn" href="#essays">Essays</a></li>
-					<li><a class="searchBtn" href="#search">Search</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div>
+	<div id="footer-main">		
+		<div data-role="navbar" class="rfNav">
+			<ul>            
+				<li><a class="programBtn" href="#programs">Podcasts</a></li>
+				<li><a class="essayBtn" href="#essays">Essays</a></li>
+				<li><a class="searchBtn" href="#search">Search</a></li>
+			</ul>
+		</div><!-- /navbar -->		
 	</div>
 	
-	<div id="header-main">
-		<div data-role="header">
-<!-- 			<a href='#' class='ui-btn-left' data-icon='arrow-l' onclick="history.back(); return false">Back</a> -->
-			<div class="logo">				
-				<img class="rfHeader" src="http://reformedforum.org/wp-content/themes/rf5/images/logo.png"/>
-			</div><!-- 
-			<a href="#programs" class="ui-btn-right" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a> -->
-		</div>
+	<div id="header-main">		
+		<div class="logo">								
+			<div class="menuBtn">
+				<a href="#">
+				  <svg width="50" height="50">
+				    <path d="M0,5 50,5" stroke="#000" stroke-width="10"/>
+				    <path d="M0,25 50,25" stroke="#000" stroke-width="10"/>
+				    <path d="M0,44 50,44" stroke="#000" stroke-width="10"/>
+				  </svg>			  
+				</a>
+			</div>
+			<span class="r">r</span>
+			<span class="f">f</span>
+		</div>		
 	</div>
 	
 </div>

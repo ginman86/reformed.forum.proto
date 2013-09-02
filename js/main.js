@@ -32,12 +32,11 @@ $(document).ready(function () {
 
 	$("div[data-role='collapsible-set']").hide();
 
-	// $('.search-mini').on
-	// ('keypress',
-	// function(e)
-	// {
-	// 	access.search($(this).val());
-	// });
+	$('.search-mini').keyup
+	(function(e)
+	{
+		if (e.keyCode === 13) nav.search($(this).val());
+	});
 
 });
 
@@ -52,6 +51,12 @@ nav =
 	function()
 	{
 		access.loadViewModels();
+	},
+	search:
+	function(searchTerm)
+	{
+		location.hash = '#search';
+		access.search(searchTerm);
 	}
 };
 
@@ -150,7 +155,7 @@ access =
 function initFooter()
 {		
 	var footer = $("#footer-main").html();
-	$("[id^=footer]").empty().append(footer).trigger("create");
+	$("[id^=nav]").empty().append(footer).trigger("create");
 
 }
 

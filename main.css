@@ -18,10 +18,15 @@ img.rfHeader
     font-size: 1.5em !important;
 }
 @font-face {
-    font-family: minion-pro, Georgia, Times, serif !important;
+    font-family: minion-pro, Georgia, Times, serif;
     font-weight: normal;
     font-style: normal;
 }
 body * {
-    font-family: minion-pro, Georgia, Times, serif !important;
+    font-family: minion-pro, Georgia, Times, serif;
+    background: transparent url(http://reformedforum.org/wp-content/themes/rf5/images/bg_main.jpg) top left repeat;
 }
+.menuBtn { }
+.r {font-family: verdana; font-size: 50px; color: #4d4b4b;}
+.f {font-family: verdana; font-size: 50px; color: #a1a1a1;}
+.rfNav {background: transparent url(http://reformedforum.org/wp-content/themes/rf5/images/bg_dark.jpg) top left repeat;}
